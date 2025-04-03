@@ -1,56 +1,65 @@
-*{
+/* General Reset */
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    font-family: poppins,sans-serif;
+    padding: 0;
+    font-family: Poppins, sans-serif;
     text-decoration: none;
 }
-body{
+
+/* Global Styles */
+body {
     overflow-x: hidden;
-}
-.hero-header{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
     background: #222;
+    color: #e5e5e5;
 }
-.wrapper{
+
+/* Wrapper */
+.wrapper {
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
     padding: 0 20px;
 }
-header{
-    padding: 40px 0 30px;
+
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0 30px;
     flex-wrap: wrap;
 }
-.logo{
-    display: inline-flex;
-    justify-content: center;
+
+/* Logo */
+.logo {
+    display: flex;
     align-items: center;
 }
-.logo i{
+
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 45px;
     width: 45px;
     background-color: #007ced;
     border-radius: 50%;
     color: #fff;
-    font-weight: 700;
     font-size: 1.5rem;
-    padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
 }
-.logo .logo-text{
+
+.logo .logo-text {
     font-size: 24px;
     font-weight: 500;
     color: #fff;
 }
-nav .togglebtn{
+
+/* Navigation */
+nav .togglebtn {
+    display: none;
     width: 35px;
     height: 35px;
     position: absolute;
@@ -59,33 +68,69 @@ nav .togglebtn{
     z-index: 5;
     cursor: pointer;
 }
-nav .togglebtn span{
+
+nav .togglebtn span {
     display: block;
     background-color: #007ced;
-    margin: 5px 0px;
+    margin: 5px 0;
     width: 100%;
     height: 3px;
-    transition: 0.3s;
-    transition-property: transform, opacity;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-nav .navlinks{
-    list-style-type: none;
+nav .navlinks {
+    list-style: none;
+    display: flex;
 }
-nav .navlinks li{
-    display: inline-block;
-}
-nav .navlinks li{
-    color: #e5e5e5;
+
+nav .navlinks li {
     margin-right: 2.5rem;
 }
+
+nav .navlinks a {
+    color: #e5e5e5;
+    font-size: 1.2rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 930px) {
+    nav .togglebtn {
+        display: block;
+    }
+
+    nav .navlinks {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        width: 60%;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: right 0.5s;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav .navlinks.open {
+        right: 0;
+    }
+
+    nav .navlinks li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Hero Section */
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 4rem;
 }
-.container .profile-picture{
+
+/* Profile Picture */
+.profile-picture {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -93,117 +138,147 @@ nav .navlinks li{
     border: 15px solid #444;
     box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
 }
-.profile-picture img{
-    height: 100%;
+
+.profile-picture img {
     width: 100%;
-    transition: 0.5s;
+    height: 100%;
+    transition: transform 0.5s;
 }
-.profile-picture img:hover{
+
+.profile-picture img:hover {
     transform: scale(1.2);
 }
-.profile-picture-text{
+
+
+/* Profile Text */
+.profile-picture-text {
     max-width: 500px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
 }
-.profile-picture-text h5{
-    color: #e5e5e5;
-    font-size: 14px;
-}
-.profile-picture-text span{
-    color: #007ced;
-    font-size: 16px;
-}
-.profile-picture-text h1{
+
+.profile-picture-text h1 {
     color: #007ced;
     font-size: 3rem;
 }
-.profile-picture-text p{
-    color: #e5e5e5;
 
+.profile-picture-text span {
+    color: #007ced;
+    font-size: 16px;
 }
-.btn-group{
+
+.profile-picture-text p {
+    font-size: 1rem;
+}
+
+/* Buttons */
+.btn-group {
     margin: 45px 0;
 }
-.btn-group .btn{
-    border-color: #d5d5d5;
-    color: #fff;
-    background-color: 12px 25px;
+
+.btn {
     padding: 12px 25px;
-    margin: 5px 0;
-    margin-right: 7px;
     border-radius: 30px;
     border: 2px solid #e5e5e5;
-    box-shadow: 0 10px 10px -8px rgb(0, 0, 0 / 78%);
+    color: white;
+    background-color: #007ced;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+    transition: 0.3s;
 }
-.btn.active{
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+.btn.active {
     border-color: #007ced;
 }
-.profile-picture-text .social i{
-    color: #e5e5e5;
-    font-size: 18px;
+
+/* Social Icons */
+.profile-picture-text .social i {
+    font-size: 36px;
     margin-right: 10px;
-    transition: 0.5s;
+    margin-top: 20px;
+    transition: transform 0.5s, color 0.5s;
 }
-.profile-picture-text .social i:hover{
-    color:#007ced;
+
+.profile-picture-text .social i:hover {
+    color: #007ced;
     transform: rotate(360deg);
 }
-/* For phones or small screens */
-@media(max-width: 930px)
-{
-    nav .togglebtn{
-        display: initial;
-    }
-    /* for toggle button*/
-    .click span{
-        position: absolute;
-        margin-top: 12px;
-    }
-    .click span:first-child{
-        transform: rotate(-45deg);
-    }
-    .click span:nth-child(2)
-    {
-        opacity: 0;
-        margin: 0;
-    }
-    .click span:last-child{
-        transform: rotate(45deg);
-        top: 0;
-    }
-    nav .navlinks{
-        position: absolute;
-        top: 110px;
-        right: 0;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
-        transition: 0.5s;
-        padding: 25px 0px;
-    }
-    nav .navlinks li{
-        display: block;
-    }
-    nav .navlinks li a{
-        display: block;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    nav .navlinks.open{
-        right: 0;
-    }
+
+/* About Me Page */
+.aboutmepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-@media(max-width:768px)
-{
-    .container{
-        flex-direction: column;
-        padding-top: 2rem;
-    }
-    .hero-text{
-        padding: 40px 0px;
-    }
+
+.aboutmepage-container .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #444;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.aboutmepage-container h1 {
+    color: #007ced;
+    font-size: 2.5rem;
+}
+
+/* Contact Page */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h1 {
+    color: #007ced;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #444;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    resize: vertical;
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007ced;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
