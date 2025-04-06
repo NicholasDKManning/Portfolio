@@ -16,6 +16,11 @@
                     <div class="logo-text">Nicholas Manning</div>
                 </div>
                 <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <ul class="navlinks">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutmepage.html">About Me</a></li>
@@ -25,18 +30,50 @@
                     </ul>
                 </nav>
             </header>
+        </div>
+    </div>
             <div class="container aboutmepage-container">
                 <div class="profile-picture">
                     <img src="profile picture.jpg" alt="Profile Picture">
                 </div>
                 <div class="profile-picture-text">
-                    <h1>About Me</h1>
-                    <p>Write about yourself here...</p>
+                    <section class="about-me">
+                        <h1>About Me</h1>
+                        <p>Hello, I'm Nicholas Manning. My journey into the world of technology began at an early age, with a strong passion for problem-solving. Over the years, I've developed a diverse skill set that blends technical expertise with leadership, and I’m always eager to take on new challenges that allow me to grow.</p>
+                      
+                        <p>As an IT Production Analyst at Linebarger, Goggan, Blair & Sampson, I continuously seek ways to optimize my own workflow. One such project is the Automated Email Response System I developed using VBA. This tool is a personal solution I created to streamline my email responses. It automatically extracts recipient names, personalizes greetings, and inserts tailored content, significantly speeding up my response time and ensuring consistency in communication. While the tool is for my personal use, it has allowed me to save hours each week, enhancing my efficiency and allowing me to focus on more strategic tasks. This project reflects my commitment to problem-solving and process improvement, even in areas that aren’t immediately visible to the larger team.</p>
+                      
+                        <p>Before this role, I had the privilege of interning at Booz Allen Hamilton as a Systems Administrator Consultant, where I worked with U.S. Cyber Command. During my time there, I developed an automated planning interface that helped manage a network of over 600 partners. The success of that project not only provided me with valuable hands-on experience but also reaffirmed my commitment to solving complex problems with elegant solutions. This tool is still in use today, which is a testament to its lasting impact.</p>
+                      
+                        <p>Outside of my professional work, I’ve applied my skills to several personal projects, including a workout tracker app and a COVID-19 data collection system. I’ve also developed a data analytics tool for analyzing Charles Dickens’ *Oliver Twist*, which helped me dive deep into text processing and data visualization. These projects keep me challenged and are an important part of my ongoing learning process.</p>
+                      
+                        <p>Currently, I’m seeking opportunities in the fields of software development, particularly in application development, data science, and game development. I am passionate about building software solutions that solve real-world problems and enhance user experiences. Whether it's creating functional applications, diving into data analysis, or exploring the complex side of video games, I’m excited to bring my skills and creativity to projects that make a difference.</p>
+                      
+                        <p>What sets me apart is my ability to blend technical proficiency with strong interpersonal skills. My colleagues and managers have consistently praised my ability to lead by example, whether through training new team members or guiding the team to improve internal processes. I thrive in environments that allow for both collaboration and independent problem-solving, and I’m excited to continue applying my skills to make meaningful contributions in the world of software development, game development, and data science.</p>
+                      
+                        <p>This portfolio is a reflection of my journey so far—my education, my hands-on projects, and the passion I have for creating solutions that make a difference. I’m eager to connect with professionals and organizations who share my enthusiasm for technology and innovation.</p>
+                      
+                        <a href="contactmepage.html" class="btn">Contact Me</a>
+                        <a href="#" id="back-to-top" class="btn">Head Back To The Top</a>
+
+                      </section>
+                                          
+                      
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // Get the toggle button and navlinks
+        const togglebtn = document.querySelector('.togglebtn');
+        const navlinks = document.querySelector('.navlinks');
+    
+        // Add click event listener to toggle the nav menu
+        togglebtn.addEventListener('click', () => {
+            navlinks.classList.toggle('open');
+        });
+    </script>
+    </script>
 </body>
 </html>
 
-<!-- Repeat similar structure for resume.html, projects.html, and contact.html -->

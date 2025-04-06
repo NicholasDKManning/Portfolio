@@ -12,10 +12,27 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutmepage.html">About Me</a></li>
+                <li><a href="resumepage.html">Resume</a></li>
+                <li><a href="projectspage.html">Projects</a></li>
+                <li><a href="contactmepage.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="contact-container">
         <h1>Contact Me</h1>
 
-        <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <form action="https://formsubmit.co/nicholas.d.k.manning@gmail.com" method="POST">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -33,14 +50,6 @@
         
             <button type="submit" class="btn">Send Message</button>
         </form>
-        
-        <div class="nav-buttons">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutmepage.html">About Me</a></li>
-            <li><a href="resumepage.html">Resume</a></li>
-            <li><a href="projectspage.html">Projects</a></li>
-            <li><a href="contactmepage.html">Contact Me</a></li>
-        </div>
 
         <div class="social-media">
             <p>Or reach me through social media!</p>
@@ -50,6 +59,15 @@
             <a href="https://github.com/NicholasDKManning" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.togglebtn');
+        const navLinks = document.querySelector('.navlinks');
+
+        toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>
