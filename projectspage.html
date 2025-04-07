@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Under Construction</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="logo-icon">MY</div>
+      <div class="logo-text">Portfolio</div>
+    </div>
+    <nav>
+      <div class="togglebtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutmepage.html">About Me</a></li>
+        <li><a href="resumepage.html">Resume</a></li>
+        <li><a href="projectspage.html">Projects</a></li>
+        <li><a href="contactmepage.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="under-construction-container">
+    <h1>My Projects Page is currently in development.</h1>
+    <div class="construction-icon">
+      <i class="fas fa-tools fa-3x"></i>
+    </div>
+    <p>Check back soon!</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nicholas Manning. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.togglebtn');
+    const navLinks = document.querySelector('.navlinks');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
