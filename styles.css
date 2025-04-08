@@ -558,6 +558,7 @@ nav .navlinks a {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
+    align-items: start;
 }
 
 .resume-card {
@@ -566,6 +567,13 @@ nav .navlinks a {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .resume-card:hover {
@@ -577,6 +585,8 @@ nav .navlinks a {
     font-size: 1.6rem;
     color: #007ced;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .resume-card p {
@@ -611,6 +621,7 @@ nav .navlinks a {
     text-align: center;
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 30px;
     transition: background-color 0.3s;
 }
 
