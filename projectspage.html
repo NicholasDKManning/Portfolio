@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects - Under Construction</title>
+  <title>My Projects</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
@@ -13,7 +13,7 @@
   <header>
     <div class="logo">
       <div class="logo-icon">MY</div>
-      <div class="logo-text">Portfolio</div>
+      <div class="logo-text">Projects</div>
     </div>
     <nav>
       <div class="togglebtn">
@@ -30,21 +30,63 @@
       </ul>
     </nav>
   </header>
+  <!-- Projects Section-->
+   <section class="resume-container">
+      <h1>My Projects</h1>
 
-  <!-- Main Content -->
-  <main class="under-construction-container">
-    <h1>My Projects Page is currently in development.</h1>
-    <div class="construction-icon">
-      <i class="fas fa-tools fa-3x"></i>
-    </div>
-    <p>Check back soon!</p>
-  </main>
+      <!--Projects Content-->
+      <p>Below is a summary of projects I've completed, currently working on, and upcoming projects I plan on starting.</p>
 
-  <!-- Footer -->
-  <footer>
+      <div class="resume-section">
+        <!-- Current Projects Card -->
+         <div class="resume-card">
+            <h3>Upcoming Projects</h3>
+            <ul>
+              <strong><li>Workout Tracker App</li></strong>
+              <li>Languages: C#, .NET SDK, Razor Pages</li>
+              <li>Tools: .NET SDK, Razor Pages, VSCode</li>
+              <li>Features I plan on implementing are: Workout Logs, Exercises Database, Progress Tracking, Notes & Goals</li>
 
-  </footer>
+            </ul>
+         </div>
+         <div class="resume-card">
+          <h3>Past Project | University</h3>
+          
+          <!-- Covid-19 County Data Collection System -->
+          <p><strong>Covid-19 County Data Collection System</strong> | Data Science, Python, Jupyter Notebook</p>
+          <ul>
+              <li><i class="fa fa-check"></i> Designed an interactive system to collect and store county names and COVID-19 test results.</li>
+              <li><i class="fa fa-check"></i> Implemented data modification features allowing real-time updates and accuracy.</li>
+              <li><i class="fa fa-check"></i> Developed a status classification system that categorized counties based on COVID-19 case counts.</li>
+              <li><i class="fa fa-check"></i> Created a user-friendly, menu-driven program with functions, recursion, and error handling.</li>
+          </ul>
+      </div>
+      <div class="resume-card">
+      <h3>Past Project | University</h3>
 
+      <!-- Book Analysis Project -->
+      <p><strong>Book Analysis Project</strong> | Data Science, Python, Jupyter Notebook</p>
+      <ul>
+          <li><i class="fa fa-check"></i> Developed a data analytics program for "Oliver Twist" using file handling and string manipulation.</li>
+          <li><i class="fa fa-check"></i> Used dictionaries, loops, and conditional statements to count word occurrences and identify unique words.</li>
+          <li><i class="fa fa-check"></i> Created a bar graph to analyze language patterns and syntax in the novel.</li>
+      </ul>
+      </div>
+      <div class="resume-card">
+          <h3>Past Project | Professional</h3>
+
+          <!-- Automated Email Response System -->
+          <p><strong>Automated Email Response System</strong> | VBA, Outlook (Mar 2025 - Present)</p>
+          <ul>
+              <li><i class="fa fa-check"></i> Developed custom VBA programs to streamline email responses in Outlook.</li>
+              <li><i class="fa fa-check"></i> Automated the extraction of recipient names from the email "to" field for personalized greetings (e.g., "Hey [First Name]").</li>
+              <li><i class="fa fa-check"></i> Dynamically inserted tailored content and professional sign-offs to save time and ensure consistent communication.</li>
+              <li><i class="fa fa-check"></i> Enhanced workflow efficiency by automating responses to routine inquiries and updates.</li>
+          </ul>
+      </div>
+      </div>
+
+   </section>
   <script>
     const toggleBtn = document.querySelector('.togglebtn');
     const navLinks = document.querySelector('.navlinks');
